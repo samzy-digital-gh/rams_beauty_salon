@@ -1,37 +1,27 @@
-function animateHeroText() {
-    const t1 = document.getElementById('text1');
-    const t2 = document.getElementById('text2');
-    if(t1 && t2) {
-        t1.style.opacity = 0;
-        t2.style.opacity = 0;
-        setTimeout(() => { t1.style.opacity = 1; }, 100);
-        setTimeout(() => { t2.style.opacity = 1; }, 2000);
-    }
-}
-
-window.addEventListener('scroll', function() {
-    // Original Popup logic: appears when reaching the services section
-    var servicesSection = document.getElementById('services');
-    var popup = document.getElementById('popup');
-    if (servicesSection && popup) {
-        var rect = servicesSection.getBoundingClientRect();
-        // Triggers when the services section is in view
-        if (rect.top <= window.innerHeight && rect.bottom >= 0 && popup.style.display !== 'block') {
-            popup.style.display = 'block';
-            // Stays for 5 seconds then hides
-            setTimeout(() => { popup.style.display = 'none'; }, 5000);
-        }
-    }
-
-    // Re-animate hero text when the user scrolls back to the very top
-    var heroSection = document.querySelector('.hero');
-    if (heroSection) {
-        var heroRect = heroSection.getBoundingClientRect();
-        if (heroRect.top >= 0 && heroRect.bottom <= window.innerHeight) {
-            animateHeroText();
-        }
-    }
-});
-
-// Run the hero animation immediately when the page finishes loading
-window.onload = animateHeroText;
+<script>
+    document.getElementById('whatsapp-form').addEventListener('submit', function(e) {
+        // 1. Prevent the default form submission
+        e.preventDefault();
+        
+        // 2. Capture the input values
+        const nameInput = document.getElementById('name').value;
+        const messageInput = document.getElementById('message').value;
+        const myPhoneNumber = "233271977814"; // Your WhatsApp number
+        
+        // 3. Create the professional message template
+        const fullMessage = "Hello Ramstouch Beauty! My name is " + nameInput + ". " + messageInput;
+        
+        // 4. Encode the message for the URL
+        const encodedMessage = encodeURIComponent(fullMessage);
+        
+        // 5. Build the WhatsApp link
+        const whatsappUrl = "https://wa.me/" + myPhoneNumber + "?text=" + encodedMessage;
+        
+        // 6. Action: Open WhatsApp in a new tab/app
+        window.open(whatsappUrl, '_blank');
+        
+        // 7. Action: Redirect the current website tab to the Success Page
+        // Make sure you have created success.html in the same folder
+        window.location.href = "success.html";
+    });
+</script>

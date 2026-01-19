@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Ramstouch Beauty</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="salon-nav">
+        <div class="logo-container">
+            <img src="rams-touch-logo.jpg" alt="Ramstouch Logo" class="nav-logo-img">
+            <div class="logo-text">
+                <span class="main-name">RAMSTOUCH</span>
+                <span class="sub-name">BEAUTY & MAKEUP LOUNGE</span>
+            </div>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="service.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero-small">
+        <div class="hero-content">
+            <h1>Contact <span class="luxury-italic">Us</span></h1>
+            <p>Experience luxury beauty at Bintu Complex.</p>
+        </div>
+    </section>
+
+    <section class="container" style="padding: 60px 8%;">
+        <div style="display: flex; flex-direction: column; gap: 40px; max-width: 800px; margin: 0 auto; text-align: left;">
+            
+            <div class="gallery-card" style="padding: 40px; width: 100%;">
+                <h2 class="serif-title" style="font-size: 2rem; margin-bottom: 20px;">Reach Out</h2>
+                <p style="margin-bottom: 30px; color: #666;">Book your appointment or visit our lounge in Kwashieman for a premium beauty experience.</p>
+                
+                <div style="margin-bottom: 25px;">
+                    <h4 style="color: var(--gold); text-transform: uppercase; font-size: 12px; letter-spacing: 1px;">Visit Our Lounge</h4>
+                    <p style="font-weight: 600;">Bintu Complex, Kwashieman, Accra</p>
+                </div>
+
+                <div style="margin-bottom: 25px;">
+                    <h4 style="color: var(--gold); text-transform: uppercase; font-size: 12px; letter-spacing: 1px;">Call or WhatsApp</h4>
+                    <p style="font-weight: 600;">027 197 7814</p>
+                </div>
+
+                <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee;">
+                    <h4 style="color: var(--maroon); margin-bottom: 10px;">Lounge Hours</h4>
+                    <p style="font-size: 14px;">Mon - Sat: 9:00 AM - 7:00 PM</p>
+                    <p style="font-size: 14px;">Sunday: Appointments Only</p>
+                </div>
+            </div>
+
+            <div class="gallery-card" style="padding: 40px; width: 100%;">
+                <h3 style="font-family: 'Playfair Display', serif; color: var(--maroon); margin-bottom: 20px;">Send a Message</h3>
+                
+                <div id="success-message" style="display:none; background: #d4edda; color: #155724; padding: 15px; border-radius: 5px; margin-bottom: 20px; font-weight: 600;">
+                    <i class="fas fa-check-circle"></i> Opening WhatsApp... Message Ready!
+                </div>
+
+                <form id="whatsapp-form">
+                    <input type="text" id="name" placeholder="Your Name" class="form-input" style="margin-bottom: 15px; width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px;" required>
+                    <textarea id="message" placeholder="What service are you interested in?" class="form-input" style="width: 100%; height: 120px; padding: 12px; border: 1px solid #ddd; border-radius: 5px; margin-bottom: 20px; resize: none;" required></textarea>
+                    
+                    <button type="submit" style="width: 100%; padding: 15px; background: var(--maroon); color: white; border: none; border-radius: 5px; cursor: pointer; text-transform: uppercase; font-weight: 600; letter-spacing: 1px;">
+                        Submit to WhatsApp
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="footer-logo">RAMSTOUCH</div>
+                <p>Elegance redefined. Specializing in luxury beauty and master hair artistry at Bintu Complex, Kwashieman.</p>
+                <div class="social-icons">
+                    <a href="https://www.tiktok.com/@ramstouch_beauty" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/233271977814" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="about.html">The CEO</a></li>
+                    <li><a href="service.html">Our Services</a></li>
+                    <li><a href="gallery.html">Lookbook</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone"></i> 027 197 7814</p>
+                <p><i class="fas fa-envelope"></i> info@ramstouch.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Kwashieman, Accra</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Ramstouch Beauty. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('whatsapp-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get values from form
+            const name = document.getElementById('name').value;
+            const message = document.getElementById('message').value;
+            const phoneNumber = "233271977814"; 
+            
+            // Show Success Banner for immediate feedback
+            document.getElementById('success-message').style.display = 'block';
+            
+            // Format message
+            const text = `Hello Ramstouch Beauty! My name is ${name}. ${message}`;
+            const encodedText = encodeURIComponent(text);
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedText}`;
+            
+            // 1. Open WhatsApp in a new tab
+            window.open(whatsappUrl, '_blank');
+            
+            // 2. Wait 1 second and then redirect this current page to success.html
+            setTimeout(function() {
+                window.location.href = "success.html";
+            }, 1000);
+        });
+    </script>
+
+</body>
+</html>
