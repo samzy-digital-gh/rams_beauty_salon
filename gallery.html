@@ -1,137 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery | Ramstouch Beauty</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beauty Lookbook & Gallery | Ramstouch — Bridal Glam & Hair Artistry Portfolio Accra</title>
+  <meta name="description" content="Browse the Ramstouch Beauty portfolio — stunning bridal glam, hair artistry, traditional makeup and beauty transformations by Accra's premier makeup studio in Kwashieman.">
+  <meta name="keywords" content="makeup portfolio Accra, bridal makeup gallery Ghana, hair artistry lookbook, beauty transformation photos Accra, Ramstouch gallery, makeup artist portfolio Ghana">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.ramstouchbeauty.com/gallery.html">
+  <meta property="og:title" content="Ramstouch Beauty Lookbook | Bridal Glam & Hair Portfolio Accra">
+  <meta property="og:description" content="View stunning bridal makeup, hair artistry and beauty transformation photos by Ramstouch Beauty, Accra's premier beauty studio.">
+  <meta property="og:image" content="https://www.ramstouchbeauty.com/gallery-bride-2.jpg">
+  <meta property="og:type" content="website">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,600&family=Playfair+Display:ital,wght@0,700;1,700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="salon-nav">
-        <div class="logo-container">
-            <img src="rams-touch-logo.jpg" alt="Ramstouch Logo" class="nav-logo-img">
-            <div class="logo-text">
-                <span class="main-name">RAMSTOUCH</span>
-                <span class="sub-name">BEAUTY & MAKEUP LOUNGE</span>
-            </div>
+  <!-- NAV -->
+  <header class="salon-nav" id="mainNav">
+    <div class="logo-container">
+      <img src="rams-touch-logo.jpg" alt="Ramstouch Beauty Logo" class="nav-logo-img" onerror="this.style.display='none'">
+      <div class="logo-text"><span class="main-name">RAMSTOUCH</span><span class="sub-name">BEAUTY &amp; MAKEUP LOUNGE</span></div>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="service.html">Services</a>
+      <a href="gallery.html" class="active" aria-current="page">Gallery</a>
+      <a href="contact.html">Contact</a><a href="booking.html" class="nav-book-btn">Book Now</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </header>
+  <div class="menu-overlay" id="menuOverlay"></div>
+  <nav class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a><a href="about.html">About</a><a href="service.html">Services</a>
+    <a href="gallery.html">Gallery</a><a href="contact.html">Contact</a>
+    <a href="booking.html" class="book-link">Book Now</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero-small">
+    <div><h1>The <span class="luxury-italic">Lookbook</span></h1><p>Artistry in every single detail</p></div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery-section">
+    <div class="section-header reveal">
+      <span class="section-tag">Our Portfolio</span>
+      <h2 class="serif-display">Work We're Proud Of</h2>
+      <div class="gold-line centered"></div>
+      <p class="body-text">Each image tells a story of transformation, confidence, and artistry. Click any photo to view it in full.</p>
+    </div>
+
+    <!-- Filter Bar -->
+    <div class="gallery-filter-bar" role="group" aria-label="Gallery filter">
+      <button class="filter-btn active" data-filter="all">All Work</button>
+      <button class="filter-btn" data-filter="makeup">Makeup</button>
+      <button class="filter-btn" data-filter="hair">Hair Artistry</button>
+      <button class="filter-btn" data-filter="bridal">Bridal</button>
+      <button class="filter-btn" data-filter="nails">Nails &amp; Spa</button>
+    </div>
+
+    <!-- Gallery Grid — all original image names + Unsplash fallbacks -->
+    <div class="gallery-grid">
+
+      <div class="gallery-item reveal" data-category="bridal" data-delay="0">
+        <img src="gallery-bride-2.jpg" alt="Bridal glam makeup — Ramstouch Beauty Accra"
+             onerror="this.src='https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?auto=format&fit=crop&w=700&q=80'" loading="lazy">
+        <div class="gallery-item-overlay"><div><span>Bridal</span><h4>Bridal Glam</h4></div></div>
+      </div>
+
+      <div class="gallery-item reveal" data-category="hair" data-delay="80">
+        <img src="braids-long.jpg" alt="Master braiding and long hair — Ramstouch artistry"
+             onerror="this.src='https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=700&q=80'" loading="lazy">
+        <div class="gallery-item-overlay"><div><span>Hair Artistry</span><h4>Master Braiding</h4></div></div>
+      </div>
+
+      <div class="gallery-item reveal" data-category="makeup" data-delay="160">
+        <img src="makeup-process.jpg" alt="Professional makeup application process Ramstouch"
+             onerror="this.src='https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=700&q=80'" loading="lazy">
+        <div class="gallery-item-overlay"><div><span>Makeup</span><h4>The Artistry Process</h4></div></div>
+      </div>
+
+      <div class="gallery-item reveal" data-category="bridal" data-delay="0">
+        <img src="bridal-red.jpg" alt="Traditional bridal elegance — Ramstouch Accra Ghana"
+             onerror="this.src='https://images.unsplash.com/photo-1571782742078-b28e9e7f7a5d?auto=format&fit=crop&w=700&q=80'" loading="lazy">
+        <div class="gallery-item-overlay"><div><span>Bridal</span><h4>Traditional Elegance</h4></div></div>
+      </div>
+
+      <div class="gallery-item reveal" data-category="hair" data-delay="80">
+        <img src="braids-1.jpg" alt="Creative hair fixing and braids — Ramstouch Beauty"
+             onerror="this.src='https://images.unsplash.com/photo-1597456900820-94f82b7dbe3b?auto=format&fit=crop&w=700&q=80'" loading="lazy">
+        <div class="gallery-item-overlay"><div><span>Hair Artistry</span><h4>Creative Fixing</h4></div></div>
+      </div>
+
+      <div class="gallery-item reveal" data-category="makeup" data-delay="160">
+        <img src="makeup-glam.jpg" alt="Luxury glam makeup finish — Ramstouch Beauty Accra"
+             onerror="this.src='https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=700&q=80'" loading="lazy">
+        <div class="gallery-item-overlay"><div><span>Makeup</span><h4>Luxury Finish</h4></div></div>
+      </div>
+
+      <div class="gallery-item reveal" data-category="nails" data-delay="0">
+        <img src="pedicure.jpg" alt="Luxury pedicure spa treatment — Ramstouch Accra"
+             onerror="this.src='https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=700&q=80'" loading="lazy">
+        <div class="gallery-item-overlay"><div><span>Nails &amp; Spa</span><h4>Luxury Pedicure</h4></div></div>
+      </div>
+
+      <div class="gallery-item reveal" data-category="makeup" data-delay="80">
+        <img src="your-image.jpg" alt="Evening glam makeup look by Ramstouch Beauty"
+             onerror="this.src='https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&w=700&q=80'" loading="lazy">
+        <div class="gallery-item-overlay"><div><span>Makeup</span><h4>Evening Glam</h4></div></div>
+      </div>
+
+      <div class="gallery-item reveal" data-category="bridal" data-delay="160">
+        <img src="gallery-bride-2.jpg" alt="Sophisticated bridal radiance — Ramstouch Beauty"
+             onerror="this.src='https://images.unsplash.com/photo-1596178065887-1198b6148b2b?auto=format&fit=crop&w=700&q=80'" loading="lazy">
+        <div class="gallery-item-overlay"><div><span>Bridal</span><h4>Bridal Radiance</h4></div></div>
+      </div>
+
+    </div><!-- end gallery-grid -->
+
+    <div style="text-align:center;margin-top:70px;" class="reveal">
+      <p class="body-text" style="margin-bottom:24px;">Love what you see? Book your own transformation today.</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+        <a href="booking.html" class="btn-dark">Book Your Session</a>
+        <a href="https://wa.me/233271977814" target="_blank" rel="noopener" class="btn-primary">
+          <i class="fab fa-whatsapp" style="margin-right:8px;"></i>Chat on WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close image viewer">&times;</button>
+    <img class="lightbox-img" src="" alt="Gallery Image">
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <span class="footer-logo-text">RAMSTOUCH</span>
+        <p class="footer-tagline">Elegance redefined. Accra's premier destination for luxury bridal glam and professional hair artistry. Bintu Complex, Kwashieman.</p>
+        <div class="social-icons">
+          <a href="https://www.tiktok.com/@ramstouch_beauty" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/233271977814" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
         </div>
-        <nav class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="service.html">Services</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="contact.html">Contact</a> 
-        </nav>
-    </header>
+      </div>
+      <div class="footer-col"><h4>Quick Links</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="service.html">Services</a></li><li><a href="gallery.html">Lookbook</a></li><li><a href="booking.html">Book Appointment</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Our Services</h4><ul class="footer-links"><li><a href="service.html">Bridal &amp; Glam Makeup</a></li><li><a href="service.html">Hair Fixing</a></li><li><a href="service.html">Course Revamping</a></li><li><a href="service.html">Luxury Pedicures</a></li></ul></div>
+      <div class="footer-col">
+        <h4>Find Us</h4>
+        <div class="footer-contact-item"><i class="fas fa-phone"></i><a href="tel:+233271977814">+233 27 197 7814</a></div>
+        <div class="footer-contact-item"><i class="fas fa-envelope"></i><a href="mailto:ramstouch@gmail.com">ramstouch@gmail.com</a></div>
+        <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>Bintu Complex, Kwashieman, Accra</span></div>
+        <div class="footer-contact-item"><i class="fas fa-clock"></i><span>Mon–Sat: 9AM–7PM<br>Sunday: Appt Only</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Ramstouch Beauty &amp; Makeup Lounge. All Rights Reserved.</span><span>Designed with ♥ in Accra</span></div>
+  </footer>
 
-    <section class="hero-small">
-        <div class="hero-content">
-            <h1>Our <span class="luxury-italic">Lookbook</span></h1>
-            <p>Artistry in every detail.</p>
-        </div>
-    </section>
-
-    <section class="gallery-container">
-        <div class="section-intro">
-            <h2 class="serif-title">The Portfolio</h2>
-            <div class="gold-line-centered"></div>
-        </div>
-
-        <div class="gallery-grid">
-            <div class="gallery-card">
-                <div class="card-img-box">
-                    <img src="gallery-bride-2.jpg" alt="Bridal Makeup">
-                </div>
-                <div class="card-text">
-                    <h3>Bridal Glam</h3>
-                    <p>Sophisticated and timeless makeup tailored for your most memorable day.</p>
-                </div>
-            </div>
-
-            <div class="gallery-card">
-                <div class="card-img-box">
-                    <img src="braids-long.jpg" alt="Master Braiding">
-                </div>
-                <div class="card-text">
-                    <h3>Master Braiding</h3>
-                    <p>Intricate and neat braiding styles that showcase modern hair artistry.</p>
-                </div>
-            </div>
-
-            <div class="gallery-card">
-                <div class="card-img-box">
-                    <img src="makeup-process.jpg" alt="The Process">
-                </div>
-                <div class="card-text">
-                    <h3>The Process</h3>
-                    <p>We use high-end techniques to ensure a flawless and lasting finish.</p>
-                </div>
-            </div>
-
-            <div class="gallery-card">
-                <div class="card-img-box">
-                    <img src="bridal-red.jpg" alt="Traditional Glam">
-                </div>
-                <div class="card-text">
-                    <h3>Traditional Elegance</h3>
-                    <p>Vibrant bridal looks that honor tradition with a touch of luxury.</p>
-                </div>
-            </div>
-
-            <div class="gallery-card">
-                <div class="card-img-box">
-                    <img src="braids-1.jpg" alt="Creative Hair">
-                </div>
-                <div class="card-text">
-                    <h3>Creative Fixing</h3>
-                    <p>Expert hair installations designed to enhance your natural beauty perfectly.</p>
-                </div>
-            </div>
-
-            <div class="gallery-card">
-                <div class="card-img-box">
-                    <img src="makeup-glam.jpg" alt="Luxury Makeup">
-                </div>
-                <div class="card-text">
-                    <h3>Luxury Finish</h3>
-                    <p>Achieving radiant, glowing skin through professional makeup application.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="main-footer">
-        <div class="footer-container">
-            <div class="footer-col">
-                <div class="footer-logo">RAMSTOUCH</div>
-                <p>Elegance redefined at Bintu Complex, Kwashieman.</p>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-tiktok"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
-                </div>
-            </div>
-            <div class="footer-col">
-                <h3>Quick Links</h3>
-                <ul class="footer-links">
-                    <li><a href="service.html">Services</a></li>
-                    <li><a href="gallery.html">Lookbook</a></li>
-                    <li><a href="contact.html">Contact</a></li> 
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h3>Contact Us</h3>
-                <p><i class="fas fa-phone"></i> 027 197 7814</p>
-                <p><i class="fas fa-map-marker-alt"></i> Kwashieman, Accra</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2026 Ramstouch Beauty. All Rights Reserved.</p>
-        </div>
-    </footer>
-
+  <a href="https://wa.me/233271977814" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+  <script src="script.js"></script>
 </body>
 </html>

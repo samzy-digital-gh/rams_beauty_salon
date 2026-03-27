@@ -1,105 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Ramstouch Beauty</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Ramstouch Beauty — Ruby Mensah, Founder & Accra's Top Makeup Artist</title>
+  <meta name="description" content="Meet Ruby Mensah, founder of Ramstouch Beauty & Makeup Lounge. Learn the story behind Accra's premier luxury beauty studio at Bintu Complex, Kwashieman.">
+  <meta name="keywords" content="Ruby Mensah makeup artist, Ramstouch beauty founder, about Ramstouch Accra, luxury beauty studio Kwashieman, Ghana makeup artist biography">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.ramstouchbeauty.com/about.html">
+  <meta property="og:title" content="About Ramstouch Beauty | Ruby Mensah — Accra's Master Beauty Artist">
+  <meta property="og:description" content="Discover the story and vision behind Ramstouch Beauty & Makeup Lounge, founded by Ruby Mensah in Kwashieman, Accra.">
+  <meta property="og:image" content="https://www.ramstouchbeauty.com/ruby.jpg">
+  <meta property="og:type" content="website">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,600&family=Playfair+Display:ital,wght@0,700;1,700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="salon-nav">
-        <div class="logo-container">
-            <img src="rams-touch-logo.jpg" alt="Ramstouch Logo" class="nav-logo-img">
-            <div class="logo-text">
-                <span class="main-name">RAMSTOUCH</span>
-                <span class="sub-name">BEAUTY & MAKEUP LOUNGE</span>
-            </div>
-        </div>
-        <nav class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="service.html">Services</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+  <!-- NAV -->
+  <header class="salon-nav" id="mainNav">
+    <div class="logo-container">
+      <img src="rams-touch-logo.jpg" alt="Ramstouch Beauty Logo" class="nav-logo-img" onerror="this.style.display='none'">
+      <div class="logo-text">
+        <span class="main-name">RAMSTOUCH</span>
+        <span class="sub-name">BEAUTY &amp; MAKEUP LOUNGE</span>
+      </div>
+    </div>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active" aria-current="page">About</a>
+      <a href="service.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <a href="booking.html" class="nav-book-btn">Book Now</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </header>
+  <div class="menu-overlay" id="menuOverlay"></div>
+  <nav class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a><a href="about.html">About</a><a href="service.html">Services</a>
+    <a href="gallery.html">Gallery</a><a href="contact.html">Contact</a>
+    <a href="booking.html" class="book-link">Book Now</a>
+  </nav>
 
-    <section class="hero-small">
-        <div class="hero-content">
-            <h1>Our <span class="luxury-italic">Story</span></h1>
-            <p>The journey of elegance and artistry.</p>
-        </div>
-    </section>
+  <!-- HERO -->
+  <section class="hero-small">
+    <div><h1>Our <span class="luxury-italic">Story</span></h1><p>The journey of elegance and artistry</p></div>
+  </section>
 
-    <section class="about-intro" style="padding: 80px 10%; text-align: center;">
-        <div style="max-width: 900px; margin: 0 auto;">
-            <h2 class="serif-title">Master Artistry</h2>
-            <div class="gold-line-centered"></div>
-            
-            <p class="long-para" style="margin-bottom: 30px;">
-                At Ramstouch, we don't just apply makeup; we craft confidence. Our journey began with a simple vision: to create a sanctuary where every woman feels like a masterpiece. Whether it is a high-fashion formal installation or a clean, natural bridal look, our work is defined by precision and a deep understanding of skin and style.
-            </p>
-            
-            <p class="long-para" style="margin-bottom: 30px;">
-                We believe every woman is a canvas of natural radiance, and our mission is to highlight your unique beauty with professional artistry that lasts. We use only the finest products and the latest techniques to ensure that your look is not only stunning but also healthy for your skin and hair.
-            </p>
-            
-            <p class="long-para" style="margin-bottom: 50px;">
-                From expert Hair Fixing and Course Revamping to our signature Luxury Pedicures, we provide a head-to-toe experience designed for the modern woman who demands excellence. Located at Bintu Complex in Kwashieman, we invite you to experience the touch of perfection that has made us a leader in Accra’s beauty industry.
-            </p>
-        </div>
-    </section>
+  <!-- BRAND STORY -->
+  <section class="section-pad" style="background:var(--white);">
+    <div class="split-layout">
+      <div class="split-image reveal-left">
+        <img src="gallery-bride-2.jpg" alt="Ramstouch bridal artistry — luxury makeup Accra"
+             onerror="this.src='https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?auto=format&fit=crop&w=800&q=80'" loading="lazy">
+      </div>
+      <div class="split-text reveal-right">
+        <span class="section-tag">Who We Are</span>
+        <h2>Born from a Vision of<br><em style="font-style:italic;color:var(--gold);">Empowerment</em></h2>
+        <div class="gold-line"></div>
+        <p class="body-text" style="margin-bottom:20px;">At Ramstouch, we don't just apply makeup — we craft confidence. Our journey began with a simple but powerful vision: to create a sanctuary where every woman feels like a masterpiece. Whether it's a high-fashion formal installation or a clean, natural bridal look, our work is defined by precision and a deep understanding of skin and style.</p>
+        <p class="body-text" style="margin-bottom:20px;">We believe every woman is a canvas of natural radiance, and our mission is to highlight your unique beauty with professional artistry that lasts. We use only the finest products and the latest techniques to ensure that your look is not only stunning but also healthy for your skin and hair.</p>
+        <p class="body-text">From expert Hair Fixing and Course Revamping to our signature Luxury Pedicures, we provide a head-to-toe experience designed for the modern woman who demands excellence — located at Bintu Complex, Kwashieman, Accra.</p>
+      </div>
+    </div>
+  </section>
 
-    <section class="ceo-section" style="padding: 60px 10%; background: #fdfdfd; text-align: center; border-top: 1px solid #eee;">
-        <div class="ceo-container">
-            <img src="ruby.jpg" alt="Ruby Mensah" style="width: 280px; height: 280px; border-radius: 50%; object-fit: cover; object-position: top; border: 4px solid var(--gold); margin-bottom: 25px; box-shadow: var(--shadow);">
-            
-            <h2 style="font-family: 'Playfair Display', serif; color: var(--maroon); font-size: 2.5rem; margin-bottom: 5px;">Ruby Mensah</h2>
-            <h5 style="color: var(--gold); text-transform: uppercase; letter-spacing: 3px; margin-bottom: 20px; font-weight: 600;">Founder & CEO</h5>
-            
-            <p class="long-para" style="max-width: 750px; margin: 0 auto; line-height: 1.8; color: #444;">
-                Ruby Mensah is a visionary beauty artist with years of experience in luxury bridal glam and hair artistry. Her passion for empowering women through beauty led to the creation of Ramstouch Beauty & Makeup Lounge. Under her leadership, the lounge has become a trusted name for excellence, known for its impeccable standards and personalized care.
-            </p>
-        </div>
-    </section>
+  <!-- VALUES -->
+  <section class="values-section">
+    <div class="section-header reveal">
+      <span class="section-tag">Our Principles</span>
+      <h2 class="serif-display">Built on Three Pillars</h2>
+      <div class="gold-line centered"></div>
+    </div>
+    <div class="values-grid">
+      <div class="value-card reveal" data-delay="0">
+        <span class="value-icon">✦</span>
+        <h3>Precision &amp; Artistry</h3>
+        <p>Every look we create is the result of meticulous attention to detail, technical expertise, and a genuine passion for beauty as an art form. We never rush perfection.</p>
+      </div>
+      <div class="value-card reveal" data-delay="120">
+        <span class="value-icon">♡</span>
+        <h3>Client-First Care</h3>
+        <p>Your comfort, your vision, and your satisfaction are at the heart of everything we do. We listen deeply and tailor every service to your unique personality and preferences.</p>
+      </div>
+      <div class="value-card reveal" data-delay="240">
+        <span class="value-icon">★</span>
+        <h3>Luxury Experience</h3>
+        <p>From the moment you walk in to the moment you leave, you are treated to a premium, relaxing experience that goes far beyond the ordinary beauty appointment.</p>
+      </div>
+    </div>
+  </section>
 
-    <footer class="main-footer">
-        <div class="footer-container">
-            <div class="footer-col">
-                <div class="footer-logo">RAMSTOUCH</div>
-                <p>Elegance redefined. Specializing in luxury beauty and master hair artistry at Bintu Complex, Kwashieman.</p>
-                <div class="social-icons">
-                    <a href="https://www.tiktok.com/@ramstouch_beauty" target="_blank"><i class="fab fa-tiktok"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="https://wa.me/233271977814" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                </div>
-            </div>
-            
-            <div class="footer-col">
-                <h3>Quick Links</h3>
-                <ul class="footer-links">
-                    <li><a href="about.html">The CEO</a></li>
-                    <li><a href="service.html">Our Services</a></li>
-                    <li><a href="gallery.html">Lookbook</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-col">
-                <h3>Contact Us</h3>
-                <p><i class="fas fa-phone"></i> 027 197 7814</p>
-                <p><i class="fas fa-envelope"></i> info@ramstouch.com</p>
-                <p><i class="fas fa-map-marker-alt"></i> Kwashieman, Accra</p>
-            </div>
+  <!-- CEO SECTION -->
+  <section class="ceo-section">
+    <div class="ceo-layout">
+      <div class="ceo-photo-wrap reveal-left">
+        <div class="ceo-photo-inner">
+          <img src="ruby.jpg" alt="Ruby Mensah — Founder and CEO of Ramstouch Beauty Makeup Lounge Accra" class="ceo-photo"
+               onerror="this.src='https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=600&q=80'" loading="lazy">
+          <div class="ceo-frame"></div>
         </div>
-        
-        <div class="footer-bottom">
-            <p>© 2026 Ramstouch Beauty. All Rights Reserved.</p>
+      </div>
+      <div class="ceo-content reveal-right">
+        <span class="section-tag">Meet the Founder</span>
+        <h2 class="ceo-name">Ruby Mensah</h2>
+        <span class="ceo-title-text">Founder &amp; Chief Executive Officer</span>
+        <div class="gold-line"></div>
+        <p class="body-text" style="margin-bottom:20px;">Ruby Mensah is a visionary beauty artist with years of experience in luxury bridal glam and professional hair artistry. Her passion for empowering women through beauty led to the creation of Ramstouch Beauty &amp; Makeup Lounge in the heart of Kwashieman, Accra.</p>
+        <p class="body-text" style="margin-bottom:20px;">Under her leadership, the lounge has become a trusted name for excellence, known for its impeccable standards, warm hospitality, and consistently stunning results. Ruby personally oversees every team member's training to ensure the Ramstouch standard is never compromised.</p>
+        <p class="body-text" style="margin-bottom:36px;font-style:italic;color:var(--maroon);font-family:'Cormorant Garamond',serif;font-size:1.15rem;">"I started Ramstouch because I believe every woman deserves to feel like a queen — not just on her wedding day, but every single day. Beauty is not about perfection; it's about celebrating who you already are."</p>
+        <div style="display:flex;gap:24px;flex-wrap:wrap;">
+          <a href="https://wa.me/233271977814" target="_blank" rel="noopener" class="btn-dark"><i class="fab fa-whatsapp" style="margin-right:8px;"></i>Message Ruby</a>
+          <a href="https://www.tiktok.com/@ramstouch_beauty" target="_blank" rel="noopener" class="btn-primary"><i class="fab fa-tiktok" style="margin-right:8px;"></i>Follow on TikTok</a>
         </div>
-    </footer>
+      </div>
+    </div>
+  </section>
 
+  <!-- BEHIND THE SCENES STRIP -->
+  <section class="section-pad" style="background:var(--cream);">
+    <div class="section-header reveal">
+      <span class="section-tag">Behind the Scenes</span>
+      <h2 class="serif-display">Our Studio in Action</h2>
+      <div class="gold-line centered"></div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px;max-width:1100px;margin:0 auto;">
+      <div style="border-radius:8px;overflow:hidden;aspect-ratio:3/4;" class="reveal" data-delay="0">
+        <img src="makeup-process.jpg" alt="Makeup application process at Ramstouch Beauty"
+             onerror="this.src='https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=400&q=80'"
+             style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s;"
+             onmouseover="this.style.transform='scale(1.07)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+      </div>
+      <div style="border-radius:8px;overflow:hidden;aspect-ratio:3/4;" class="reveal" data-delay="80">
+        <img src="makeup-glam.jpg" alt="Glam makeup look by Ramstouch Beauty Accra"
+             onerror="this.src='https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=400&q=80'"
+             style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s;"
+             onmouseover="this.style.transform='scale(1.07)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+      </div>
+      <div style="border-radius:8px;overflow:hidden;aspect-ratio:3/4;" class="reveal" data-delay="160">
+        <img src="braids-1.jpg" alt="Professional hair braiding Ramstouch"
+             onerror="this.src='https://images.unsplash.com/photo-1597456900820-94f82b7dbe3b?auto=format&fit=crop&w=400&q=80'"
+             style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s;"
+             onmouseover="this.style.transform='scale(1.07)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+      </div>
+      <div style="border-radius:8px;overflow:hidden;aspect-ratio:3/4;" class="reveal" data-delay="240">
+        <img src="pedicure.jpg" alt="Luxury pedicure spa treatment Ramstouch Accra"
+             onerror="this.src='https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=400&q=80'"
+             style="width:100%;height:100%;object-fit:cover;transition:transform 0.5s;"
+             onmouseover="this.style.transform='scale(1.07)'" onmouseout="this.style.transform='scale(1)'" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="why-strip">
+    <div class="section-header reveal" style="margin-bottom:60px;">
+      <span class="section-tag" style="color:var(--gold-light);">Why Ramstouch</span>
+      <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.5vw,3rem);color:var(--white);margin-bottom:8px;">The Ramstouch Difference</h2>
+      <div class="gold-line centered"></div>
+    </div>
+    <div class="why-strip-grid">
+      <div class="why-item reveal" data-delay="0"><i class="fas fa-medal"></i><h4>Award-Winning Artistry</h4><p>Recognized across Accra for consistently delivering stunning, high-quality beauty results that exceed expectations.</p></div>
+      <div class="why-item reveal" data-delay="100"><i class="fas fa-leaf"></i><h4>Premium Products Only</h4><p>We use only certified, skin-safe, and high-end beauty products for every single service we offer.</p></div>
+      <div class="why-item reveal" data-delay="200"><i class="fas fa-clock"></i><h4>Punctual &amp; Professional</h4><p>We deeply respect your time. Every appointment is meticulously prepared for and executed with precision.</p></div>
+      <div class="why-item reveal" data-delay="300"><i class="fas fa-heart"></i><h4>Personalized Every Time</h4><p>No two clients are the same. We tailor every single look to celebrate your unique, individual beauty.</p></div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="reveal">
+      <span class="section-tag">Start Your Journey</span>
+      <h2>Experience the<br><em style="font-style:italic;color:var(--gold);">Ramstouch Touch</em></h2>
+      <p>Book your appointment today and discover why hundreds of women across Accra trust Ramstouch for their most important beauty moments.</p>
+      <a href="booking.html" class="btn-dark">Book Your Session</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <span class="footer-logo-text">RAMSTOUCH</span>
+        <p class="footer-tagline">Elegance redefined. Accra's premier destination for luxury bridal glam and professional hair artistry. Bintu Complex, Kwashieman.</p>
+        <div class="social-icons">
+          <a href="https://www.tiktok.com/@ramstouch_beauty" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/233271977814" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Quick Links</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="service.html">Services</a></li><li><a href="gallery.html">Lookbook</a></li><li><a href="booking.html">Book Appointment</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Our Services</h4><ul class="footer-links"><li><a href="service.html">Bridal &amp; Glam Makeup</a></li><li><a href="service.html">Hair Fixing</a></li><li><a href="service.html">Course Revamping</a></li><li><a href="service.html">Luxury Pedicures</a></li></ul></div>
+      <div class="footer-col">
+        <h4>Find Us</h4>
+        <div class="footer-contact-item"><i class="fas fa-phone"></i><a href="tel:+233271977814">+233 27 197 7814</a></div>
+        <div class="footer-contact-item"><i class="fas fa-envelope"></i><a href="mailto:ramstouch@gmail.com">ramstouch@gmail.com</a></div>
+        <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>Bintu Complex, Kwashieman, Accra</span></div>
+        <div class="footer-contact-item"><i class="fas fa-clock"></i><span>Mon–Sat: 9AM–7PM<br>Sunday: Appt Only</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Ramstouch Beauty &amp; Makeup Lounge. All Rights Reserved.</span><span>Designed with ♥ in Accra</span></div>
+  </footer>
+
+  <a href="https://wa.me/233271977814" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+  <script src="script.js"></script>
 </body>
 </html>
